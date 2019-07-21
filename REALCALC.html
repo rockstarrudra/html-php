@@ -1,0 +1,129 @@
+<script>
+    var val="";
+    var fin="";
+    function addition()
+    {
+        var usrval=parseInt(val);
+        fin=(usrval+usrval);
+    }
+    function multi()
+    {
+        var usrval=parseInt(val);
+        fin=(usrval*usrval);
+    }
+    function divide()
+    {
+        var usrval=parseInt(val);
+        fin=(usrval/usrval);
+    }
+    function sub()
+    {
+        var usrval=parseInt(val);
+        fin=(usrval-usrval);
+    }
+    function equals()
+    {
+        frm.txtAns.value=fin;
+    }
+    
+    
+    function seven()
+    {
+        val+="7";
+        frm.txtAns.value=val;
+    }
+    function eight()
+    {
+        val+="8";
+        frm.txtAns.value=val;
+    }
+    function nine()
+    {
+        val+="9";
+        frm.txtAns.value=val;
+    }
+    function four()
+    {
+        val+="4";
+        frm.txtAns.value=val;
+    }
+    function five()
+    {
+        val+="5";
+        frm.txtAns.value=val;
+    }
+    function six()
+    {
+        val+="6";
+        frm.txtAns.value=val;
+    }
+    function one()
+    {
+        val+="1";
+        frm.txtAns.value=val;
+    }
+    function two()
+    {
+        val+="2";
+        frm.txtAns.value=val;
+    }
+    function three()
+    {
+        val+="3";
+        frm.txtAns.value=val;
+    }
+    function zero()
+    {
+        val+="0";
+        frm.txtAns.value=val;
+    }
+</script>
+<form name="frm">
+    
+<table border="2" width="15%"  height="10%" cellspacing="10" cellpadding="10">
+
+<tr>
+<td colspan="1">Value</td>
+<td><textarea rows="2" cols="15" name="txtAns"></textarea></td>
+</tr>
+
+</table>
+    
+<table border="2" width="10%"  height="30%" cellspacing="10" cellpadding="10">
+    
+<tr>
+<td colspan="1"><input type="button" value="7" name="7" onclick="seven();"></td>
+<td colspan="1"><input type="button" value="8" name="8" onclick="eight();"></td>
+<td colspan="1"><input type="button" value="9" name="9" onclick="nine();"></td>
+<td colspan="1"><input type="button" value="*" name="*" onclick="multi();"></td>
+</tr>
+
+<tr>
+<td colspan="1"><input type="button" value="4" name="4" onclick="four();"></td>
+<td colspan="1"><input type="button" value="5" name="5" onclick="five();"></td>
+<td colspan="1"><input type="button" value="6" name="6" onclick="six();"></td>
+<td colspan="1"><input type="button" value="-" name="-" onclick="sub();"></td>
+</tr>
+
+<tr>
+<td colspan="1"><input type="button" value="1" name="1" onclick="one();"></td>
+<td colspan="1"><input type="button" value="2" name="2" onclick="two();"></td>
+<td colspan="1"><input type="button" value="3" name="3" onclick="three();"></td>
+<td colspan="1"><input type="button" value="+" name="+" onclick="addition();"></td>
+</tr>
+
+<tr>
+<td colspan="1"><input type="button" value="." name="dot" onclick="dot();"></td>
+<td colspan="1"><input type="button" value="0" name="0" onclick="zero();"></td>
+<td colspan="1"><input type="button" value="%" name="%" onclick="modulo();"></td>
+<td colspan="1"><input type="button" value="/" name="/" onclick="divide();"></td>
+</tr>
+    
+<tr>
+<td colspan="2"><input type="reset" value="C" style="width: 100%" name="rst"></td>
+<td colspan="2"><input type="button" value="=" style="width: 100%" name="=" onclick="equals();"></td>
+</tr>
+
+
+</table>
+</form>
